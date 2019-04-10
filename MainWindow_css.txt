@@ -1,0 +1,30 @@
+#MainWindow {
+background: gray;
+}
+
+#mainFrame {
+border: 3px solid gray;
+border-radius: 20px;
+background: white;
+background-image: url(:/grid);
+background-repeat: no-repeat no-repeat;
+background-position: center center;
+background-attachment: fixed;
+}
+
+QLabel { background: transparent; }
+
+#startXButton, #startOButton {
+color: black;
+background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #FF143C, stop: 0.1 #DD143C, stop: 0.49 #BB143C, stop: 0.5 #99143C, stop: 1 #BB143C);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+}
+#startXButton {
+background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, stop: 0.1 #3E3, stop: 0.49 #2B2, stop: 0.5 #2A2, stop: 1 #2B2);
+}
+
+#sq1Button, #sq2Button, #sq3Button, #sq4Button, #sq5Button, #sq6Button, #sq7Button, #sq8Button, #sq9Button  { background: transparent; }
