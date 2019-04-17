@@ -65,4 +65,6 @@ class Tictactoe(QMainWindow):
         else:
             self.logger.critical('No pickle Filename')
 
+    def restoreSettings(self):
+        pass
 

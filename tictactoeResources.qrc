@@ -1,5 +1,5 @@
 <RCC>
   <qresource>
-    <file alias="grid">grid.png</file>
+    <file alias="grid">images/grid.png</file>
   </qresource>
 </RCC>
