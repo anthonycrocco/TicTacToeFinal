@@ -20,7 +20,7 @@ class Tictactoe(QMainWindow):
         super().__init__(parent)
         self.logger = getLogger('crocco.tictactoe')
         self.appSettings = QSettings()
-        self.quitCounter = 0;
+        self.quitCounter = 0
 
         uic.loadUi('TicTacToe.ui', self)
 
@@ -66,5 +66,22 @@ class Tictactoe(QMainWindow):
             self.logger.critical('No pickle Filename')
 
     def restoreSettings(self):
-        pass
+        if self.createLogFile:
+            self.logger.debug("Starting restoreSettings")
+        if self.appSettings.contains('createLogFile'):
+            self.createLogFile = self.appSettings.value('createLogFile')
+        else:
+            self.createLogFile = logFilenameDefault
+            self.appSettings.setValue('createLogFile', self.createLogFile)
+        if self.appSettings.contains("pickleFilename"):
+            self.pickleFilename = self.appSettings.value('pickleFilename', type=str)
+        else:
+            self.pickleFilename = pickleFilenameDefault
+            self.appSettings.setValue('pickleFilename', self.pickleFilename)
+
+    def ticTacToe(self):
+        board = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        end = False
+        win = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
+
 

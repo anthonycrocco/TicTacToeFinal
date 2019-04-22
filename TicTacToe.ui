@@ -64,18 +64,18 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>250</x>
-       <y>180</y>
+       <y>190</y>
        <width>331</width>
-       <height>331</height>
+       <height>321</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="2" column="1">
-       <widget class="QPushButton" name="pushButton_8">
+       <widget class="QPushButton" name="box7">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>50</horstretch>
@@ -100,7 +100,7 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
        </widget>
       </item>
       <item row="0" column="0">
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QPushButton" name="box3">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>100</horstretch>
@@ -125,7 +125,7 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QPushButton" name="pushButton_5">
+       <widget class="QPushButton" name="box4">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>50</horstretch>
@@ -150,7 +150,7 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="box2">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>50</horstretch>
@@ -175,7 +175,7 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
        </widget>
       </item>
       <item row="0" column="2">
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="box5">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>50</horstretch>
@@ -200,7 +200,7 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="box1">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>50</horstretch>
@@ -225,7 +225,7 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="box0">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>50</horstretch>
@@ -250,7 +250,7 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
        </widget>
       </item>
       <item row="1" column="2">
-       <widget class="QPushButton" name="pushButton_7">
+       <widget class="QPushButton" name="box6">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>50</horstretch>
@@ -275,7 +275,7 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
        </widget>
       </item>
       <item row="2" column="2">
-       <widget class="QPushButton" name="pushButton_9">
+       <widget class="QPushButton" name="box8">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>50</horstretch>
@@ -301,6 +301,129 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
       </item>
      </layout>
     </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>30</y>
+       <width>251</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>29</pointsize>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>TicTacToe</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="winMessage">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>130</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Welcome to TicTacToe</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>570</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Your Wins:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>580</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Our Wins:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>590</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>600</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -312,12 +435,12 @@ background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3F3, sto
      <height>26</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuTicTacToa">
+   <widget class="QMenu" name="menuTicTacToe">
     <property name="title">
      <string>TicTacToe</string>
     </property>
    </widget>
-   <addaction name="menuTicTacToa"/>
+   <addaction name="menuTicTacToe"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action">
